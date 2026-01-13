@@ -1,0 +1,8 @@
+{
+  "amp.experimental.autoHandoff": { "context": 90 },
+  "amp.permissions": [
+    { "tool": "Bash", "matches": { "cmd": "*git push*" }, "action": "ask" },
+    { "tool": "Bash", "matches": { "cmd": "*git commit*" }, "action": "allow" },
+    { "tool": "*", "action": "allow" }
+  ]
+}

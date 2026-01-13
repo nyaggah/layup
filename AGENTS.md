@@ -2,7 +2,7 @@
 
 This file provides Layup-specific context for any project. Copy to your project root and adapt as needed.
 
-> **Global vs Project:** Layup-wide context (company, compliance, floor UX) can also live in `~/.ampcode/skills/` for automatic inclusion. This template is for project-specific customization.
+> **Global vs Project:** Layup-wide context (company, compliance, floor UX) can also live in `$HOME/.config/amp/AGENTS.md` for automatic inclusion. This template is for project-specific customization.
 
 ## Company Context
 
