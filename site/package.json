@@ -7,7 +7,6 @@
     "email": "joe@nyaggah.com",
     "url": "https://nyaggah.com"
   },
-  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
