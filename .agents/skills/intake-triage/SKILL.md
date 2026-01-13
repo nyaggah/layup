@@ -24,7 +24,7 @@ Single entry point for capturing inputs from any channel. Classifies, tags, and 
 2. Capture structured intake using template
 3. Attach any artifacts (Figma, screenshots, data)
 4. Assess priority and scope
-5. Save to `layup-amp-ralph/inputs/intake-YYYY-MM-DD-[slug].md`
+5. Save to `inputs/intake-YYYY-MM-DD-[slug].md`
 
 ## Clarifying Questions
 
@@ -148,4 +148,4 @@ Ask these to classify the input:
 
 ## Output
 
-Save to: `layup-amp-ralph/inputs/intake-YYYY-MM-DD-[slug].md`
+Save to: `inputs/intake-YYYY-MM-DD-[slug].md`

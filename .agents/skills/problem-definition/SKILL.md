@@ -11,9 +11,9 @@ Refine inputs into structured problem statements ready for PRD creation. Accepts
 
 | Source | Location |
 |--------|----------|
-| Floor Observation | `layup-amp-ralph/issues/obs-*.md` |
-| Synthesis Brief | `layup-amp-ralph/synthesis/brief-*.md` |
-| Intake (direct) | `layup-amp-ralph/inputs/intake-*.md` |
+| Floor Observation | `issues/obs-*.md` |
+| Synthesis Brief | `synthesis/brief-*.md` |
+| Intake (direct) | `inputs/intake-*.md` |
 | Design Artifact | Figma link |
 
 ## Workflow
@@ -25,7 +25,7 @@ Refine inputs into structured problem statements ready for PRD creation. Accepts
 5. Map systems involved
 6. Capture stakeholder input
 7. Define solution direction
-8. Save to `layup-amp-ralph/issues/problem-[slug].md`
+8. Save to `issues/problem-[slug].md`
 
 ## Clarifying Questions
 
@@ -153,9 +153,9 @@ Refine inputs into structured problem statements ready for PRD creation. Accepts
 - [ ] Constraints documented
 - [ ] Design artifacts attached
 
-**Next Step:** Generate PRD → `layup-amp-ralph/tasks/prd-[feature].md`
+**Next Step:** Generate PRD → `tasks/prd-[feature].md`
 ```
 
 ## Output
 
-Save to: `layup-amp-ralph/issues/problem-[slug].md`
+Save to: `issues/problem-[slug].md`

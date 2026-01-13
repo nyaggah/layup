@@ -14,7 +14,7 @@ Validate completed features with real operators on the manufacturing floor befor
 3. Run operator testing sessions
 4. Verify compliance requirements
 5. Collect feedback and make go/no-go decision
-6. Document results in `layup-amp-ralph/tasks/validation-[feature].md`
+6. Document results in `tasks/validation-[feature].md`
 
 ## Pre-Validation Setup
 
@@ -202,4 +202,4 @@ Watch the operator use the feature. Note:
 
 ## Output
 
-Save to: `layup-amp-ralph/tasks/validation-[feature].md`
+Save to: `tasks/validation-[feature].md`

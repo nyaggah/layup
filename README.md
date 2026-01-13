@@ -21,13 +21,20 @@ Then customize `AGENTS.md` for project-specific commands, stack details, etc.
 
 ### Global (Layup-wide context)
 
-For company-wide context that applies to all projects:
+For company-wide context that applies to all projects, use Amp's skill installation:
 
 ```bash
-cp -r .agents/skills ~/.ampcode/skills/
+amp skill add /path/to/this-repo
 ```
 
-Skills in `~/.ampcode/skills/` are available in every project automatically.
+Or add global AGENTS.md guidance:
+
+```bash
+# Global AGENTS.md
+$HOME/.config/amp/AGENTS.md
+# or
+$HOME/.config/AGENTS.md
+```
 
 ## Directory Structure
 

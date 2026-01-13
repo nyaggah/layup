@@ -11,12 +11,12 @@ Create PRDs optimized for autonomous implementation, considering Layup's manufac
 
 ## Workflow
 
-1. Read problem definition from `layup-amp-ralph/issues/problem-[slug].md`
+1. Read problem definition from `issues/problem-[slug].md`
 2. Review attached design artifacts (Figma)
 3. Ask clarifying questions if needed
 4. Generate structured PRD with user stories
 5. Reference designs in acceptance criteria
-6. Save to `layup-amp-ralph/tasks/prd-[feature].md`
+6. Save to `tasks/prd-[feature].md`
 
 ## Clarifying Questions
 
@@ -158,4 +158,4 @@ Each story should be:
 
 ## Output
 
-Save to: `layup-amp-ralph/tasks/prd-[feature].md`
+Save to: `tasks/prd-[feature].md`

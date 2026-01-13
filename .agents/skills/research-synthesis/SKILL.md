@@ -18,12 +18,12 @@ Combine multiple inputs into patterns, insights, and prioritized design briefs. 
 
 ## Workflow
 
-1. Gather related inputs from `layup-amp-ralph/inputs/`
+1. Gather related inputs from `inputs/`
 2. Identify patterns and themes
 3. Extract jobs-to-be-done
 4. Prioritize using impact/effort matrix
 5. Create design brief
-6. Save to `layup-amp-ralph/synthesis/brief-[topic].md`
+6. Save to `synthesis/brief-[topic].md`
 
 ## Clarifying Questions
 
@@ -159,4 +159,4 @@ Combine multiple inputs into patterns, insights, and prioritized design briefs. 
 
 ## Output
 
-Save to: `layup-amp-ralph/synthesis/brief-[topic].md`
+Save to: `synthesis/brief-[topic].md`

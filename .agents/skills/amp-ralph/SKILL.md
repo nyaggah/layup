@@ -23,7 +23,7 @@ Execute PRDs using continuous agent execution for Layup Parts manufacturing tool
 
 ## Step 1: Convert PRD to JSON
 
-Read from `layup-amp-ralph/tasks/prd-[feature].md` and create `prd.json` in workspace root:
+Read from `tasks/prd-[feature].md` and create `prd.json` in workspace root:
 
 ```json
 {
