@@ -46,8 +46,7 @@ export function Hero() {
           Read the proposal
         </a>
         <a
-          href="https://nyaggah.github.io/layup/"
-          // className="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+          href="https://github.com/nyaggah/layup/"
           className={cn(
             buttonVariants({ variant: 'secondary' }),
             'flex items-center gap-2 rounded-full',
