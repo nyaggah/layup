@@ -1,18 +1,18 @@
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { SiGithub } from "react-icons/si";
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
+import { SiGithub } from 'react-icons/si'
 
 export function Hero() {
   return (
-    <header className="pb-12 pt-32">
+    <header className="pt-32 pb-12">
       <a
         href="https://nyaggah.com/"
-        className="mb-8 flex flex-col items-start justify-start space-y-2 no-underline w-max grayscale contrast-100 hover:grayscale-0 transition-all duration-300"
+        className="mb-8 flex w-max flex-col items-start justify-start space-y-2 no-underline contrast-100 grayscale transition-all duration-300 hover:grayscale-0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 25 27"
-          className="ml-[2px] h-auto w-8 fill-foreground"
+          className="fill-foreground ml-[2px] h-auto w-8"
         >
           <path d="M.1 27L0 .6 25 27z" />
           <path d="M12.5 27L24.9 0v27z" className="fill-foreground/60" />
@@ -27,13 +27,13 @@ export function Hero() {
       </a>
 
       {/* <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl"> */}
-      <h1 className="z-10 max-w-lg mt-0! text-2xl md:text-3xl leading-tight">
-        Joe + AI = A Layup{" "}
+      <h1 className="z-10 mt-0! max-w-lg text-2xl leading-tight md:text-3xl">
+        Joe + AI = A Layup{' '}
         <span className="inline-block animate-bounce">🏀</span>
       </h1>
       {/* <p className="text-xl text-muted-foreground text-balance"> */}
-      <p className="z-10 max-w-lg mt-0! text-xl md:text-2xl leading-tight text-muted-foreground text-balance">
-        An outsider's proposal for autonomous{" "}
+      <p className="text-muted-foreground z-10 mt-0! max-w-lg text-xl leading-tight text-balance md:text-2xl">
+        An outsider's proposal for autonomous{' '}
         <span className="whitespace-nowrap">AI-aided</span> product development
         at Layup Parts
       </p>
@@ -41,16 +41,16 @@ export function Hero() {
         <a
           href="#problem"
           // className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          className={cn(buttonVariants({ variant: "default" }), "rounded-full")}
+          className={cn(buttonVariants({ variant: 'default' }), 'rounded-full')}
         >
           Read the proposal
         </a>
         <a
-          href="https://github.com/nyaggah/"
+          href="https://nyaggah.github.io/layup/"
           // className="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
           className={cn(
-            buttonVariants({ variant: "secondary" }),
-            "flex items-center gap-2 rounded-full"
+            buttonVariants({ variant: 'secondary' }),
+            'flex items-center gap-2 rounded-full',
           )}
           target="_blank"
           rel="noopener noreferrer"
@@ -60,5 +60,5 @@ export function Hero() {
         </a>
       </div>
     </header>
-  );
+  )
 }

@@ -2,6 +2,19 @@
   "name": "amp-ralph",
   "description": "Amp Ralph (for Layup Parts) is an autonomous AI agent loop that runs Amp with handoff repeatedly until all PRD items are complete.",
   "version": "0.0.1",
+  "keywords": [
+    "amp",
+    "ai-agents",
+    "autonomous-agents",
+    "prd",
+    "product-development",
+    "manufacturing",
+    "layup-parts",
+    "workflow-automation",
+    "react",
+    "typescript",
+    "vite"
+  ],
   "author": {
     "name": "joey",
     "email": "joe@nyaggah.com",
