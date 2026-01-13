@@ -8,13 +8,33 @@ Built as a demonstration of the "Joe + AI @ Layup" approach: human direction and
 
 ## Installation
 
-### Per-Project (Recommended)
-
-Copy `.agents/` and `AGENTS.md` to your project root:
+### New Project
 
 ```bash
-cp -r /path/to/this-repo/.agents /path/to/your-project/
-cp /path/to/this-repo/AGENTS.md /path/to/your-project/
+# Copy layup workflow into your project
+cp -r /path/to/layup/.amp your-project/
+cp -r /path/to/layup/.agents your-project/
+cp /path/to/layup/AGENTS.md your-project/  # or merge with existing
+
+# Start Amp
+cd your-project
+amp
+```
+
+### Existing Project
+
+```bash
+# Create directories if needed
+mkdir -p your-project/.amp your-project/.agents/skills
+
+# Merge the .amp directory (settings)
+cp /path/to/layup/.amp/settings.json your-project/.amp/
+
+# Merge the .agents directory (skills)
+cp -r /path/to/layup/.agents/skills/* your-project/.agents/skills/
+
+# Merge AGENTS.md guidance (append or integrate manually)
+cat /path/to/layup/AGENTS.md >> your-project/AGENTS.md
 ```
 
 Then customize `AGENTS.md` for project-specific commands, stack details, etc.
@@ -24,16 +44,18 @@ Then customize `AGENTS.md` for project-specific commands, stack details, etc.
 For company-wide context that applies to all projects:
 
 ```bash
-cp -r .agents/skills ~/.ampcode/skills/
+# Global AGENTS.md
+$HOME/.config/amp/AGENTS.md
+# or
+$HOME/.config/AGENTS.md
 ```
-
-Skills in `~/.ampcode/skills/` are available in every project automatically.
 
 ## Directory Structure
 
 ```
 your-project/
-├── AGENTS.md              # Layup context (customize per project)
+├── .amp/                  # Amp project settings
+│   └── settings.json      # Handoff, permissions, etc.
 ├── .agents/skills/        # Workflow skills
 │   ├── intake-triage/
 │   ├── research-synthesis/
@@ -41,6 +63,7 @@ your-project/
 │   ├── layup-prd/
 │   ├── amp-ralph/
 │   └── floor-validation/
+├── AGENTS.md              # Layup context (customize per project)
 ├── inputs/                # Triaged inputs
 ├── synthesis/             # Research briefs
 ├── issues/                # Problem definitions
@@ -108,6 +131,24 @@ Skills load automatically when you use trigger phrases:
 | `tasks/validation-*.md`         | Floor validation reports  |
 | `prd.json`                      | Amp-ralph execution state |
 | `progress.txt`                  | Amp-ralph progress log    |
+
+## Configuration
+
+### .amp/settings.json
+
+```json
+{
+  "amp.experimental.autoHandoff": { "context": 90 },
+  "amp.permissions": [
+    { "tool": "Bash", "matches": { "cmd": "*git push*" }, "action": "ask" },
+    { "tool": "Bash", "matches": { "cmd": "*git commit*" }, "action": "allow" },
+    { "tool": "*", "action": "allow" }
+  ]
+}
+```
+
+- **autoHandoff**: Automatically continues in a new thread at 90% context usage (enables Ralph-style continuous execution)
+- **permissions**: Allows commits without prompts, asks before push, allows all other tools
 
 ## See Also
 
