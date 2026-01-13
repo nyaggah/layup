@@ -111,7 +111,7 @@ Skills load automatically when you use trigger phrases:
 
 ## See Also
 
-- [RFC.md](RFC.md) — Full background, rationale, and lineage
+- [RFC](https://nyaggah.github.io/layup/) — Full background, rationale, and lineage
 - [AGENTS.md](AGENTS.md) — Layup context template
 - [.agents/skills/](.agents/skills/) — Skill definitions
 
