@@ -4,7 +4,7 @@
 
 A 7-phase AI-augmented workflow system for autonomous product development at Layup Parts. Captures feedback from the shop floor and takes it all the way to validated, deployed features—using AI agents for structured execution while keeping humans in the loop for judgment calls.
 
-Built as a demonstration of the "Joe + AI @ Layup" approach: human direction and taste combined with AI-powered execution. See [nyaggah.github.io/layup/](https://nyaggah.github.io/opaque_id/) for the full rationale.
+Built as a demonstration of the "Joe + AI @ Layup" approach: human direction and taste combined with AI-powered execution. See [nyaggah.github.io/layup/](https://nyaggah.github.io/layup/) for the full rationale.
 
 ## Installation
 
