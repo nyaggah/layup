@@ -11,13 +11,15 @@ import {
 } from "lucide-react";
 import { Paragraph, Section, SectionTitle } from "../components/Section";
 
+const base = import.meta.env.BASE_URL;
+
 const projects = [
   {
     name: "specialize.studio",
     url: "https://specialize.studio",
     description:
       "One-man agency partnering with early-stage startups to build B2B, B2C & AI SaaS products. Modern Serverless (Next.js + Vercel + Supabase) and Modern Monolith (Rails 8 + Inertia.js + Vite/React/TS).",
-    image: "/specialize-studio.avif",
+    image: `${base}specialize-studio.avif`,
     featured: true,
   },
   {
@@ -25,20 +27,20 @@ const projects = [
     url: "https://picchat.ai",
     description:
       "Cross-platform desktop app for AI image generation, editing and curation. Mac App Store.",
-    image: "/picchat.ai.avif",
+    image: `${base}picchat.ai.avif`,
   },
   {
     name: "Bedframe.dev",
     url: "https://bedframe.dev",
     description:
       "Open source framework for shipping cross-browser extensions with Vite + React.",
-    image: "/bedframe.avif",
+    image: `${base}bedframe.avif`,
   },
   {
     name: "GabKit.com",
     url: "https://gabkit.com",
     description: "Creator platform starter kit built with Ruby on Rails.",
-    image: "/gabkit.avif",
+    image: `${base}gabkit.avif`,
   },
 ];
 
@@ -85,7 +87,7 @@ export function About() {
       <div className="space-y-12">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
           <img
-            src="/hello-is-this-thing-on.jpg"
+            src={`${base}hello-is-this-thing-on.jpg`}
             alt="Joe Nyaggah"
             className="h-32 w-32 rounded-full object-cover ring-4 ring-primary/20"
           />
